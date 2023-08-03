@@ -28,4 +28,4 @@ app.get("/api/getkey", (req, res) => {
   res.status(200).json({ key: process.env.RAZORPAY_API_KEY });
 });
 const port = process.env.PORT || 4000;
-app.listen(port, () => console.log(`listening on port ${port}`));
+app.listen(port);
